@@ -1,4 +1,4 @@
-# armtemlate
+# armtemplate
 
 This template creates a new logical server that will contain a zone redundant copy of an existing database. Specify the following values:
 
