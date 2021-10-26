@@ -62,7 +62,7 @@
                         "createMode": "Copy",
                         "sourceDatabaseId": "[parameters('databaseId')]",
                         "zoneRedundant": true,
-						"requestedBackupStorageRedundancy": "Zone"
+			"requestedBackupStorageRedundancy": "Zone"
                     },
                     "dependsOn": [
                         "[resourceId('Microsoft.Sql/servers', concat(parameters('serverName')))]"
