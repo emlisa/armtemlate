@@ -9,10 +9,10 @@
                 "description": "The name of the SQL logical server for the database you would like to copy to. This will be the new test logical server that will be created."
             }
         },
-        "databaseId": {
+        "resourceId": {
             "type": "string",
             "metadata": {
-                "description": "The id for the database you would like to copy from."
+                "description": "The id for the resource you would like to copy from."
             }
         },
         "copydbName": {
@@ -60,7 +60,7 @@
                     "location": "[parameters('location')]",
                     "properties": {
                         "createMode": "Copy",
-                        "sourceDatabaseId": "[parameters('databaseId')]",
+                        "sourceDatabaseId": "[parameters('resourceId')]",
                         "zoneRedundant": true,
 			"requestedBackupStorageRedundancy": "Zone"
                     },
